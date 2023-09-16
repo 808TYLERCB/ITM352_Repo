@@ -1,0 +1,92 @@
+<html>
+
+<head> <link rel="stylesheet" href="products-style.css"> 
+        <style id="localStyle"></style>
+        
+        <script> 
+            const store_name ="Tyler Brede";
+  
+        </script>
+
+<script> 
+
+function startRotate(element) {
+            element.className = "item rotate";
+        }
+
+        function stopRotate(element) {
+            element.className = "item";
+        }
+
+</script>
+
+   <p style="text-align: center; font-weight: bold;">
+            Hits:<span id="hits_span">0</span>
+            Spins:<span id="spins_span">0</span>
+        </p>
+        
+</head>
+
+<body onload="hits_span.innerHTML = hits; spins_span.innerHTML = spins;">
+
+
+
+</body>
+        <title>SmartPhone Products</title>
+    
+        
+        <h1>
+            <script> 
+            document.write(store_name+"'s Used Smart Phone Store");
+            </script>
+
+        </h1>
+
+     
+
+
+  <input id='speedSlider' type='range' min=".1" max="5" step=".1" style="direction: rtl;" onchange="localStyle.innerHTML = '.rotate img {animation-duration: ' + speedSlider.value + 's;}';">
+
+    <div><main>
+    <section class="item" onmouseover="startRotate(this); spins_span.innerHTML = ++spins;" onclick="stopRotate(this); hits_span.innerHTML = ++hits;">
+            <h2>HTC</h2>
+            <p>&dollar;40</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg />
+        </section>
+        <section class="item" onmouseover="startRotate(this); spins_span.innerHTML = ++spins;" onclick="stopRotate(this); hits_span.innerHTML = ++hits;">
+            <h2>Apple</h2>
+            <p>&dollar;75</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/iphone-3gs.jpg />
+        </section>
+        <section class="item" onmouseover="startRotate(this); spins_span.innerHTML = ++spins;" onclick="stopRotate(this); hits_span.innerHTML = ++hits;">
+            <h2>Nokia</h2>
+            <p>&dollar;35</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/Nokia.jpg />
+        </section>
+        <section class="item" onmouseover="startRotate(this); spins_span.innerHTML = ++spins;" onclick="stopRotate(this); hits_span.innerHTML = ++hits;">
+            <h2>Samsung</h2>
+            <p>&dollar;45</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/Samsung.jpg />
+        </section>
+        <section class="item" onmouseover="startRotate(this); spins_span.innerHTML = ++spins;" onclick="stopRotate(this); hits_span.innerHTML = ++hits;">
+            <h2>Blackberry</h2>
+            <p>&dollar;10</p>
+            <img src=http://dport96.github.io/ITM352/morea/080.flow-control-II/Blackberry.jpg />
+        </section>
+    </main></div>
+
+    <h1>
+        <script> 
+        document.write("Your One Stop For Used Phones -" + store_name + "'s");
+        </script>
+
+    </h1>
+
+
+    <script>
+        var hits = 0;
+        var spins = 1;
+    </script>
+
+    
+</html>
