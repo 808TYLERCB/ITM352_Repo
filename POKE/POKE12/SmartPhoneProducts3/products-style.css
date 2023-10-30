@@ -1,0 +1,85 @@
+/* General */
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1, h2 {
+  text-align: center;
+}
+
+/* Block Styling */
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background: url("images/phone_globe.jpg") no-repeat 50% center;
+  color: black;
+}
+
+/* Styling the products display */
+.item img {
+  width: 200px;
+  height:200px;
+}
+
+/* Div children of body */
+body > div {
+  border: 5px solid black;
+  display: flex;
+}
+.rotate img
+{
+animation: rotation .3s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
+}
+
+/* Styling for product quantity labels */
+[id^="quantity"][id$="_label"] {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Styling for product quantity textboxes */
+[id^="quantity"]:not([id$="_label"]) {
+  display: block;
+  margin-top: 5px;
+  width: 60%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Centering the button within its container */
+form footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Styling the button */
+form footer input[type="submit"] {
+  background-color: blue;  /* Setting the button color to blue */
+  color: white;            /* Text color to white for better contrast */
+  padding: 15px 30px;      /* Making the button larger using padding */
+  font-size: 1.5em;        /* Increasing the font size */
+  border: none;            /* Removing any default borders */
+  border-radius: 5px;      /* Slight rounded corners */
+  cursor: pointer;         /* Hand cursor on hover for better UX */
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Hover effect for the button */
+form footer input[type="submit"]:hover {
+  background-color: darkblue;  /* Darkening the button color on hover */
+}
