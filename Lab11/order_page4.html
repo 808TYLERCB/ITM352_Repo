@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page 4</title>
+    <link rel="stylesheet" href="order_styles.css">
+    <script src="order4.js" defer></script>
+</head>
+<body onload="validateOnLoad()">
+    <form name="quantity_form" action="" method="GET">
+        <label for="quantity_textbox">Quantity desired:</label>
+        <input type="text" name="quantity_textbox" onkeyup="updateMessage(this)">
+        <span id='qty_textbox_message'>Enter a quantity</span>
+        <br>
+        <input type="submit" value="Purchase">
+    </form>
+    <div id="output"></div>
+</body>
+</html>

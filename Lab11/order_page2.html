@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page 2</title>
+    <link rel="stylesheet" href="order_styles.css">
+    <script src="order2.js" defer></script>
+</head>
+<body>
+    <label for="quantity">Quantity desired:</label>
+    <input type="text" id="quantity" onkeyup="updateMessage(this)">
+    <span id='qty_textbox_message'>Enter a quantity</span>
+    <br>
+    <button onclick="displayPurchase()">Purchase</button>
+</body>
+</html>
